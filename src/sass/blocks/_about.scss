@@ -22,7 +22,8 @@
     }
     &__title {
         position: relative;
-        padding-left: 12px;     @include before__circle;
+        padding-left: 12px;    
+        @include before__circle;
     }
     &__text {
         font-size: 14px;
