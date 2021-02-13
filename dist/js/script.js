@@ -8,3 +8,10 @@ hamburger.addEventListener('click', () =>  {
 closeElem.addEventListener('click', () =>  {
     menu.classList.remove('active');
 });
+
+const value = document.querySelectorAll('.progress__item-value'),
+      total = document.querySelectorAll('.progress__item-total div');
+
+value.forEach((item, i) => {
+    total[i].style.width = item.innerHTML;
+});

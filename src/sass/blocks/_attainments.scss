@@ -1,0 +1,40 @@
+.attainments {
+    padding-top: 130px;
+    &__title {
+        position: relative;
+        @include before__circle;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .title {
+        text-align: center;
+    }
+    &__inner {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 60px;
+        display: grid;
+        gap: 13px;
+        grid-auto-rows: minmax(270px, auto);
+        grid-template-rows: repeat(2, 270px);
+        grid-template-columns: repeat(4, minmax(270px, auto));
+    }
+    &__item {
+        padding: 30px;
+        border: 1px solid #000;
+        
+    }
+}
+.attaiments__item-title {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.attaiments__item-descr {
+    font-size: 12px;
+    line-height: 18px;
+}
