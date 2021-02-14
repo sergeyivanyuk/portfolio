@@ -352,7 +352,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <section class="portfolio">
         <div class="container">
@@ -360,10 +360,10 @@
             <div class="title title__fz36">Мои работы</div>
             <div class="divider"></div>
             <div class="portfolio__inner">
-                <a href="source/Uber/index.html" target="_blank" class="portfolio__item">
+                <a href="#" target="_blank" class="portfolio__item">
                     <img src="img/works/uber.jpg" alt="uber" class="portfolio__img">
                 </a>
-                <a href="source/pulse/index.html" target="_blank"  class="portfolio__item">
+                <a href="#" target="_blank"  class="portfolio__item">
                     <img src="img/works/pulse.jpg" alt="pulse" class="portfolio__img">
                 </a>
                 <a href="#" class="portfolio__item">
@@ -443,7 +443,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <section class="contact">
         <div class="container">
@@ -473,25 +473,31 @@
                     <div class="title title__fz14 contact__text">Или оставьте ваши данные и я сама вам напишу:</div>
                     <form action="#" class="contact__form">
                         <div class="contact__input">
-                            <input id="mane" type="text" name="email">
+                            <input id="mane" type="text" name="name" required>
                             <label for="name">Ваше Имя</label>
                         </div>
                         <div class="contact__input">
-                            <input id="email" type="email" name="email">
+                            <input id="email" type="email" name="email" required>
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contact__textarea">
                             <textarea id="text" name="text"></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <div>
+                        <div class="contact__triggers">
                             <button class="btn contact__btn">Отправить сообщение</button>
+                            <div class="contact__policy">
+                                <input type="checkbox" required>
+                                <span>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></span>
+                                
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

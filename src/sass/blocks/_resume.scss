@@ -79,6 +79,7 @@
                 @include before__circle;
                 img {
                     transform: translate(17px, 14px);
+                    object-fit: cover;
                 }
            }
            &-location {

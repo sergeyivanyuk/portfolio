@@ -1,0 +1,276 @@
+@media (max-width: 1439px) {
+    .sitepanel {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 968px;
+    }
+    .about {
+        &__inner {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+        &__skills {
+            column-gap: 20px;
+            grid-template: repeat(2,minmax(115px,auto))/repeat(2,250px);
+        }
+    }
+    .skill {
+        grid-template-columns: 40px 195px;
+        column-gap: 15px;
+    }
+    .resume {
+        &__inner {
+            grid-template-columns: repeat(2,360px);
+        }
+    }
+    .attainments {
+        &__inner {
+            column-gap: 70px;
+            row-gap: 20px;
+            grid-template-columns: repeat(3, 270px);
+        }
+    }
+    .portfolio {
+        &__inner {
+            justify-content: space-around;
+            grid-auto-rows: 280px;
+            row-gap: 35px;
+            grid-template-columns: repeat(auto-fit, 260px);
+            .horizontal, .vertical{
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .price {
+        &__inner {
+            padding-left: 0;
+            padding-right: 0;
+            grid-template: repeat(3,65px)/repeat(2,1fr);
+            grid-auto-rows: 65px;
+            row-gap: 20px;
+        }
+    }
+    .contact {
+        &__inner {
+            padding: 0;
+            grid-template-columns: 400px 520px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        &__fz36 {
+            font-size: 30px;
+        }
+    }
+    .about {
+        &__inner {
+            grid-template-columns: 300px 380px;
+        }
+        &__skills {
+            grid-auto-rows: minmax(115px, auto);
+            grid-template-columns: 360px;
+        }
+    }
+    .skill {
+        grid-template-columns: 40px 175px;
+        column-gap: 20px;
+    }
+    .resume {
+        padding-top: 60px;
+        &__inner {
+            column-gap: unset;
+            padding: 40px 0 0 0;
+            justify-content: space-between;
+            grid-template-columns: repeat(2, 250px)
+        }
+    }
+    .attainments {
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .price {
+        &__inner {
+            column-gap: 40px;
+        }
+    }
+    .contact {
+        &__inner {
+            grid-template-columns: 300px 400px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 195px);
+        }
+        &__btn {
+            padding: 8px 25px;
+            line-height: 16px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        &__fz48 {
+            font-size: 28px;
+        }
+
+    }
+    .promo {
+        &__title {
+            line-height: 39px;
+            width: 300px;
+        }
+    }
+    .about {
+        padding-top: 40px;
+        &__inner {
+            grid-template: 400px auto auto / 1fr;
+        }
+        &__img {
+            grid-row: unset;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 180px);
+        }
+    }
+    .skill {
+        grid-template-columns: 40px 120px;
+        column-gap: 20px;
+    }
+    .progress {
+        padding-top: 80px;
+        &__inner {
+            row-gap: 40px;
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    .contact {
+        padding-top: 40px;
+        &__img {
+            display: none;
+        }
+        &__inner {
+            grid-template-columns: 1fr;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / repeat(2, 250px);
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &__fz48 {
+            font-size: 26px;
+        }
+        &__fz36 {
+            font-size: 24px;
+        }
+
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .promo {
+        background: url('../img/main_bg.jpg') no-repeat 57%/cover;
+        &__buttons {
+            margin-top: 32px;
+        }
+    }
+    .about {
+        &__inner {
+            grid-template: 340px auto auto / 1fr;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+        }
+    }
+    .skill {
+        grid-template-columns: 1fr;
+    }
+    .resume {
+        &__inner {
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            grid-auto-rows: 1fr;
+            row-gap: 40px;
+        }
+    }
+    .attainments {
+        padding-top: 40px;
+        &__inner {
+            
+            grid-template-columns: 1fr;
+        }
+    }
+    .progress {
+        padding-top: 40px;
+        &__inner {
+            column-gap: unset;
+            grid-template-columns: 1fr;
+        }
+    }
+    .portfolio {
+        padding-top: 40px;
+        &__inner {
+            row-gap: 20px;
+        }
+    }
+    .price {
+        &__inner {
+            margin-top: 20px;
+            row-gap: 20px;
+            column-gap: unset;
+            grid-template-columns: 90%;
+            justify-content: space-around;
+        }
+    }
+    .contact {
+        padding-bottom: 50px;
+        &__form {
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+            width: 100%;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
+            row-gap: 20px;
+        }
+        &__btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &__policy {
+            width: 180px;
+            margin: 0 auto;
+            line-height: 18px;
+        }
+    }
+}
